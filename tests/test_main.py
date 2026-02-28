@@ -46,7 +46,7 @@ def test_get_item():
 def test_post_item():
     """Test the post item endpoint."""
     response = client.post(
-        "/api/items", json={"name": "Item 5", "description": "Item 5 description"}
+        "/api/items", params={"name": "Item 5", "description": "Item 5 description"}
     )
     assert response.status_code == 200
     data = response.json()
