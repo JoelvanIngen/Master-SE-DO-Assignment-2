@@ -21,11 +21,11 @@ repos:
     hooks:
       - id: bandit
         args: ['-c', 'pyproject.toml']
-        additional_dependencies: ['bandit[toml']
+        additional_dependencies: ['bandit[toml]']
 
   # Secrets
   - repo: https://github.com/Yelp/detect-secrets
-    rev: 1.5.0
+    rev: v1.5.0
     hooks:
       - id: detect-secrets
         args: ['--baseline', '.secrets.baseline']
@@ -33,7 +33,7 @@ repos:
 
   # Code Style
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: 0.15.4
+    rev: v0.15.4
     hooks:
       - id: ruff
         args: [--fix]
