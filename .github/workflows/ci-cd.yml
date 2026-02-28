@@ -10,7 +10,7 @@ on:
       - '**'
 
 env:
-  IMAGE_NAME: student_service
+  IMAGE_NAME: assignment-2
   REPO_NAME: joelvaningen
 
 jobs:
